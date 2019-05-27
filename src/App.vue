@@ -8,7 +8,7 @@
               <button @click="selectedComponent = 'appNew'">New</button>
               <hr>
               <p>{{ selectedComponent }} </p>
-              <!-- remember is is a keywird -->
+              <!-- remember :is is a keyword -->
               <component :is="selectedComponent">
                 <p>
                   default component
