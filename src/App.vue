@@ -9,11 +9,16 @@
               <hr>
               <p>{{ selectedComponent }} </p>
               <!-- remember :is is a keyword -->
-              <component :is="selectedComponent">
-                <p>
-                  default component
-                </p>
-              </component>
+              <p class="alert alert-warning"> keep alive will not make component reinitializ.
+                it make alive the component state!
+              </p>
+              <keep-alive>
+                <component :is="selectedComponent">
+                    <p>
+                      default component
+                    </p>
+                </component>
+              </keep-alive>
                 <!-- <app-quote> 
                   <h2 slot="first-slot">Hi there</h2>
                 </app-quote> -->
