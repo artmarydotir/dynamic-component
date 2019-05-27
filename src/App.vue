@@ -14,6 +14,12 @@
                     <p>im a slot</p>
                   </div>
                 </app-quote>
+                <!-- default slot no name render default -->
+                <app-quote>
+                  <div>
+                    <span> no name slot == default </span>
+                  </div>
+                </app-quote>
             </div>
         </div>
     </div>

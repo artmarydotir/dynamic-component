@@ -2,6 +2,8 @@
     <div>
         <slot name="first-slot"></slot>
         <slot name="second-slot"></slot>
+        <slot>
+        </slot>
     </div>
 </template>
 <script>
