@@ -1,6 +1,7 @@
 <template>
     <div>
-        <slot></slot>
+        <slot name="first-slot"></slot>
+        <slot name="second-slot"></slot>
     </div>
 </template>
 <script>
