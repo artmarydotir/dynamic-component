@@ -9,6 +9,21 @@
             The component will DIE.
             we can check this by destroy hook too!
         </p>
+        <p class="alert alert-warning">
+            if we use keep alive , we lose the destroy hook.
+            what is the alternative to keep hook?
+            there is two hook : that we can use instead:
+            <br>
+            <span>
+                1- deactivated()
+            </span>
+            <br>
+            <span>
+                2-activated()
+            </span>
+
+
+        </p>
     </div>
 </template>
 
@@ -22,6 +37,12 @@ export default {
     },
     destroyed() {
         console.log('destroyed!');
+    },
+    deactivated() {
+        console.log('deactivated!');
+    },
+    activated() {
+        console.log('activated!');
     }
 }
 </script>
